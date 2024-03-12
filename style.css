@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: black;
+  color: white;
+  height: 65px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-family: cursive;
+}
+nav ul {
+  list-style: none;
+}
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  position: relative;
+}
+.box {
+  border: 2px solid black;
+  font-size: 8vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: rgb(207, 206, 209);
+}
+.info {
+  font-size: 30px;
+  font-family: "Baloo Bhaina 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.gameInfo {
+  padding: 0 34px;
+  font-family: "Baloo Bhaina 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.imgBox img {
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+#reset {
+  margin: 0 23px;
+  padding: 8px 20px;
+  background-color: rgb(236, 182, 236);
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Baloo Bhaina 2", sans-serif;
+  font-weight: bolder;
+}
+.line {
+  width: 0;
+  height: 3px;
+  background-color: rgb(164, 45, 164);
+  position: absolute;
+  transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 950px) {
+  .gameContainer {
+    flex-wrap: wrap;
+  }
+  .gameInfo {
+    margin-top: 40px;
+  }
+  .gameInfo h1 {
+    font-size: 1.5rem;
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #reset {
+    margin-left: 90px;
+    margin-top: 20px;
+  }
+  .imgBox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+  }
+  .line {
+    width: 0;
+    height: 3px;
+    background-color: rgb(164, 45, 164);
+    position: absolute;
+    transition: width 1s ease-in-out;
+  }
+}
